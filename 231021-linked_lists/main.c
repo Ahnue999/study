@@ -29,13 +29,16 @@ int main(void)
 	current = head;
 	current = add_node_end_o(current, 1);
 	current = add_node_end_o(current, 3);
+	current = add_node_end_o(current, 4);
+	current = add_node_end_o(current, 5);
+	current = add_node_end_o(current, 6);
 
 	current = head;
 
 	add_node_mid(head, 2, 3);
 
 	head = delete_first_node(head);
-	del_list(&head);
+	head = rev_list(head);
 
 	printf("There are %d nodes in this list\n", count_nodes(head));
 	printf("\n__________THE_LIST__________\n\n"); 

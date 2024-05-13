@@ -29,5 +29,6 @@ void delete_last_node_o(node *);
 void del_pos(node *, int);
 void del_pos_o(node **, int);
 void del_list(node **);
+node *rev_list(node *);
 
 #endif

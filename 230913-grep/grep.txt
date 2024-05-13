@@ -1,0 +1,13 @@
+grep
+w:
+specific word.
+i:
+case insensitive.
+n:
+line number.
+B []:
+line before.
+A []:
+line After.
+C []:
+context "line before and after

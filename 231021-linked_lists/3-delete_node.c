@@ -1,5 +1,12 @@
 #include "lists.h"
 
+/**
+ * delete_first_node - deletes the first node
+ * of a list.
+ * @head: the head pointer.
+ *
+ * Return: the new head pointer.
+ */
 node *delete_first_node(node *head)
 {
 	node *temp;
@@ -18,6 +25,12 @@ node *delete_first_node(node *head)
 	return (head);
 }
 
+/**
+ * delete_last_node - deletes the last node
+ * of a list
+ * @head: the head pointer.
+ * Return: the new head pointer.
+ */
 node *delete_last_node(node *head)
 {
 	node *temp, *temp2;
@@ -50,6 +63,13 @@ node *delete_last_node(node *head)
 	return (head);
 }
 
+/**
+ * delete_last_node_o - deletes the last node
+ * of a list without needing to update the head.
+ * @head: the head pointer of the list.
+ *
+ * Return: no return.
+ */
 void delete_last_node_o(node *head)
 {
 	node *temp;
@@ -77,6 +97,13 @@ void delete_last_node_o(node *head)
 	}
 }
 
+/**
+ * del_pos_o - delete a node at a certain position.
+ * @head: the head pointer.
+ * @pos: the position of the node to be deleted.
+ *
+ * Return: NO return.
+ */
 void del_pos_o(node **head, int pos)
 {
 	node *previous, *current;
@@ -111,6 +138,12 @@ void del_pos_o(node **head, int pos)
 	}
 }
 
+/**
+ * del_list - deletes the whole list.
+ * @head: the list pointer by refrence.
+ *
+ * Return: nothing.
+ */
 void del_list(node **head)
 {
 	node *temp = *head;
