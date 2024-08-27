@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project.
-SRC = 01_hello_SDL.cpp
+SRC = 7-sdl_tutorial.c
 
 #CC specifies which compiler we're using.
 CC = gcc
@@ -8,11 +8,15 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #LINKER_FLAGS specifies the libraries we're linking against.
-LINKER_FLAGS = -lSDL2
+LINKER_FLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
 
-NAME = 01_hello_SDL
+NAME = sdl_tutorial
 
-.PHONY: all
+.PHONY: all debug
 
 all: $(SRC)
 	$(CC) $(SRC) $(LINKER_FLAGS) -o $(NAME)
+
+
+debug: $(SRC)
+	$(CC) $(SRC) -g $(LINKER_FLAGS) -o $(NAME)
