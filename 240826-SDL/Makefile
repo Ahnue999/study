@@ -1,14 +1,14 @@
 #OBJS specifies which files to compile as part of the project.
-SRC = 7-sdl_tutorial.c
+SRC = 9-sdl_tutorial.cpp
 
 #CC specifies which compiler we're using.
-CC = gcc
+CC = g++
 
 #CFLAGS specifies the additional compilation options we're using.
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #LINKER_FLAGS specifies the libraries we're linking against.
-LINKER_FLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
+LINKER_FLAGS = -lSDL2 -lSDL2_image # -lSDL2_ttf -lSDL2_mixer
 
 NAME = sdl_tutorial
 
